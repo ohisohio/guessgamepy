@@ -13,10 +13,10 @@ if level == "e":
     while count < guess_limit:
         guess = int(input("Guess the Random number between 1 and 10 (6 Guesses Only): "))
         if easyGuess == guess:
-            print("Yeah! you got it right")
+            print("You got it right")
             break
         elif easyGuess != guess:
-            print("Wrong Guess, Try again")
+            print("That was Wrong! Guesses Left :" + str((guess_limit - count) - 1))
         count += 1
         if count == guess_limit:
             print("Game Over! The Correct Number is " + str(easyGuess))
@@ -26,10 +26,10 @@ if level == "m":
     while count < guess_limit:
         guess = int(input("Guess the Random number between 1 and 20 (4 Guesses Only): "))
         if mediumGuess == guess:
-            print("Yeah! you got it right")
+            print("You got it right")
             break
         elif mediumGuess != guess:
-            print("Wrong Guess, Try again")
+            print("That was Wrong! Guesses Left :" + str((guess_limit - count) - 1))
         count += 1
         if count == guess_limit:
             print("Game Over! The Correct Number is " + str(mediumGuess))
@@ -39,10 +39,10 @@ if level == "h":
     while count < guess_limit:
         guess = int(input("Guess the Random number between 1 and 50 (3 Guesses Only): "))
         if hardGuess == guess:
-            print("Yeah you got it right")
+            print("You got it right")
             break
         elif hardGuess != guess:
-            print("Wrong Guess, Try again")
+            print("That was Wrong! Guesses Left :" + str((guess_limit - count) - 1))
         count += 1
         if count == guess_limit:
             print("Game Over! The Correct Number is " + str(hardGuess))
