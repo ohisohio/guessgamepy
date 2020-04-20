@@ -16,7 +16,7 @@ if level == "e":
             print("Yeah! you got it right")
             break
         elif easyGuess != guess:
-            print("Wrong, Try again")
+            print("Wrong Guess, Try again")
         count += 1
         if count == guess_limit:
             print("Game Over! The Correct Number is " + str(easyGuess))
@@ -29,7 +29,7 @@ if level == "m":
             print("Yeah! you got it right")
             break
         elif mediumGuess != guess:
-            print("Wrong, Try again")
+            print("Wrong Guess, Try again")
         count += 1
         if count == guess_limit:
             print("Game Over! The Correct Number is " + str(mediumGuess))
@@ -42,7 +42,7 @@ if level == "h":
             print("Yeah you got it right")
             break
         elif hardGuess != guess:
-            print("Wrong, Try again")
+            print("Wrong Guess, Try again")
         count += 1
         if count == guess_limit:
             print("Game Over! The Correct Number is " + str(hardGuess))
